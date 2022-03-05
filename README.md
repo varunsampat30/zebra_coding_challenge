@@ -12,9 +12,9 @@ Build a simulated warehouse using gazebo (version 7 or higher) or using ROSDS. A
 
 1. Provide (2) pictures of the map:
 	1. Top View: Top view (./worlds/warehouse_top_view.png) 
-![Top View Image](https://github.com/[varunsampat30]/zebra_coding_challenge/blob/main/warehouse_top_view.png?raw=true)
+![Top View Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/warehouse_top_view.png?raw=true)
 	2. Isometric View 
-![Isometric View Image](https://github.com/[varunsampat30]/zebra_coding_challenge/blob/main/warehouse_isometric_view.png?raw=true)
+![Isometric View Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/warehouse_isometric_view.png?raw=true)
 2. Provide the world file for the map: The .world file can be found in ./worlds/warehouse.world
 
 

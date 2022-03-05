@@ -11,10 +11,10 @@ This is the take-home assignment for the Simulation Software Engineering Positio
 Build a simulated warehouse using gazebo (version 7 or higher) or using ROSDS. Add 9 blue shelves that are 10 meter x 2 meter x 2 meter. Be sure to include a floor and some lights. Warehouse dimensions 40 meter x 20 meter.
 
 1. Provide (2) pictures of the map:
-	1. Top View: Top view (./worlds/warehouse_top_view.png) 
-![Top View Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/warehouse_top_view.png?raw=true)
-	2. Isometric View 
-![Isometric View Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/warehouse_isometric_view.png?raw=true)
+	1. Top View: Can be found in "./worlds/warehouse_top_view.png"
+![Top View Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/worlds/warehouse_top_view.png?raw=true)
+	2. Isometric View: Can be found in "./worlds/warehouse_isometric_view.png" 
+![Isometric View Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/worlds/warehouse_isometric_view.png?raw=true)
 2. Provide the world file for the map: The .world file can be found in ./worlds/warehouse.world
 
 

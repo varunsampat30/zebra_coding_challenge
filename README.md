@@ -11,13 +11,18 @@ This is the take-home assignment for the Simulation Software Engineering Positio
 Build a simulated warehouse using gazebo (version 7 or higher) or using ROSDS. Add 9 blue shelves that are 10 meter x 2 meter x 2 meter. Be sure to include a floor and some lights. Warehouse dimensions 40 meter x 20 meter.
 
 1. Provide (2) pictures of the map: one from above and one isometric view: Top view (./warehouse_isometric_view.png) and isometric view (./warehouse_isometric_view.png)
+![alt text](https://github.com/[varunsampat30]/zebra_coding_challenge/blob/main/warehouse_isometric_view.jpg?raw=true)
 2. Provide the world file for the map: The .world file can be found in ./worlds/warehouse.world
 
 
 # Task 2
 The part will use the repository https://github.com/fetchrobotics/fetch_gazebo. Follow the tutorial and answer the questions below. There will be some tasks beyond the tutorial. 
-1. When you are running the freight robot simulation (used `roslaunch fetch_gazebo simulation.launch robot:=freight`)
-  - Provide an image of rviz with the freight robot: (`rosrun rviz rviz`)
+1. When you are running the freight robot simulation:
+For this, I ran the following commands in seperate terminals:
+  - `roslaunch fetch_gazebo playground.launch robot:=freight`
+  - `roslaunch fetch_gazebo_demo demo.launch`
+  - `rosrun rviz rviz`
+  - Provide an image of rviz with the freight robot: 
   - Modify the freight robot to include a 3D depth camera at the front of the robot, provide the modified file.
   - Run it again providing an image from RVIZ. Make sure the sensor data from the 3D depth camera is being displayed. 
 2. While demo.launch is running use rosbag record to record a bag file of topics that you think are important for pathplaning, mapping and testing. (Hint: rostopic list to see all the topics). Provide the bag file you recorded.

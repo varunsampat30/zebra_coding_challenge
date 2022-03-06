@@ -22,14 +22,18 @@ Build a simulated warehouse using gazebo (version 7 or higher) or using ROSDS. A
 The part will use the repository https://github.com/fetchrobotics/fetch_gazebo. Follow the tutorial and answer the questions below. There will be some tasks beyond the tutorial. 
 1. When you are running the freight robot simulation:
 For this, I ran the following commands in seperate terminals:
-  - `roslaunch fetch_gazebo playground.launch robot:=freight`
-  - `roslaunch fetch_gazebo_demo demo.launch`
-  - `rosrun rviz rviz`
-  - Provide an image of rviz with the freight robot: 
-  - Modify the freight robot to include a 3D depth camera at the front of the robot, provide the modified file.
-  - Run it again providing an image from RVIZ. Make sure the sensor data from the 3D depth camera is being displayed. 
+  `roslaunch fetch_gazebo playground.launch robot:=freight`
+  `roslaunch fetch_gazebo_demo demo.launch`
+  `rosrun rviz rviz`
+	1. Provide an image of rviz with the freight robot: 
+![RVIZ Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/figs/freight_robot_rviz.png?raw=true)
+
+Additionally, this is what the playground looks like on Gazebo:
+![Playground Gazebo Image](https://github.com/varunsampat30/zebra_coding_challenge/blob/main/figs/playground_launch.png?raw=true)
+	1. Modify the freight robot to include a 3D depth camera (MS Kinect, code for which can be found in the kinect_ros folder) at the front of the robot, provide the modified file.
+	1. Run it again providing an image from RVIZ. Make sure the sensor data from the 3D depth camera is being displayed. 
 2. While demo.launch is running use rosbag record to record a bag file of topics that you think are important for pathplaning, mapping and testing. (Hint: rostopic list to see all the topics). Provide the bag file you recorded.
-3. Run the modified freight robot in Part 2.a.ii in the world file you created in Part 1.
+3. Run the modified freight robot in Part 2.1.2 in the world file you created in Part 1.
   - Provide (2) pictures of the map: one from above and one isometric view.
   - Use teleop_twist to move the robot and provide a recorded rosbag of the manual drive
   `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`

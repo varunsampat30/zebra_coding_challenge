@@ -45,7 +45,7 @@ For this, I ran the following commands in seperate terminals:
 	    -  However, if already implemented SLAM algorithms are to be leveraged, the occupancy grid (or any map) can be directly tracked. In that case, the topics of interest become: `/map`, `/map_metadata`, and `/odom`. Additionally, `tf/` would be needed for the same reason mentioned before. The output bagfile for this can be found in **./bagfiles/mapping.bag**. 
 	    -  If mapping refers to just localization in a known map (Active Monte-Carlo Localization), then topics such as `/particlecloud` or `/amcl_pose` could be tracked using `rosbag`. 
 	
-	- **Testing**: Testing a robot in a simulation environment would also depend on the task being performed. Assuming the robot would be moved manually, the commands from the teleop operation would be necessary to trace/debug the steps taken by the robot and the consequent actions. If the robot is being driven by another high-level controller (probably defined by us, as programmers) then the published velocity (odom).  Overall, the occupancy grid (`/map` and `map_metadata`), velocity of the robot (`/odom`) and the manual drive (`/teleop/cmd_vel`) would be useful.  The output bagfile with this can be found in **./bagfiles/testing.bag**. Other additions could include important sensor data such as bumpers that may help debug the testing aspect further. 
+	- **Testing**: Testing a robot in a simulation environment would also depend on the task being performed. Assuming the robot would be moved manually, the commands from the teleop operation (`/cmd_vel`) would be necessary to trace/debug the steps taken by the robot and the consequent actions. If the robot is being driven by another high-level controller (probably defined by us, as programmers) then the published velocity (odom).  Overall, the occupancy grid (`/map` and `map_metadata`) and velocity of the robot (`/odom`) would be useful.  The output bagfile with this can be found in **./bagfiles/testing.bag**. Other additions could include important sensor data such as bumpers that may help debug the testing aspect further. 
 
 3. Run the modified freight robot in Part 2.1.2 in the world file you created in Part 1.
 	- Provide (2) pictures of the map: one from above and one isometric view:
@@ -54,4 +54,6 @@ For this, I ran the following commands in seperate terminals:
 	    - With that, I could directly run `roslaunch fetch_gazebo warehouse.launch robot:=freightDepthCamera`
 	- Use teleop_twist to move the robot and provide a recorded rosbag of the manual drive:
 	    - For this, I first ran `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`. 
-	    - Once I had the teleop setup, I set up a rosbag command: `rosbag record -O teleop.bag `
+	    - Once I had the teleop setup, I set up a rosbag command: `rosbag record -O manual_drive.bag /cmd_vel`
+	    - The output bagfile for this can be found in **./bagfiles/manual_drive.bag**
+

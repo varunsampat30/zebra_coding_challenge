@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <gazebo version="1.2">
-  <model name="kinect">
+  <model name="kinect_ros">
     <pose>0 0 0.036 0 0 0</pose>
     <link name="link">
       <inertial>
